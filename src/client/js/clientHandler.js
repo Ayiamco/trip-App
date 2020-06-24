@@ -10,7 +10,8 @@ export function addList(){
         option.value=countries[index];
         let select=document.getElementById('countries')
         select.appendChild(option)
-    }        
+    } 
+    return "finished"   
 }
 
 export async function addTrip(){

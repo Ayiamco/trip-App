@@ -26,29 +26,29 @@
                 <input type="date" id="travelDate" placeholder="name">
             </div>
             
-            <div class="traveldata addtripbutton">
-                <button  id="addTrip" class="traveldata">Add Trip</button>
-            </div>
+            
+            <a  href="#" id="addTrip" class="traveldata addtripbutton">Add Trip</a>
+            
                 
         </section>
         <div class="trip">
                 
         </div>
     </main>
-    
+    <script>
+        //last configuration to set up service workers
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
     
 </body>
 </html>
 
 
-        <!-- <script>
-            //last configuration to set up service workers
-            // Check that service workers are supported
-            if ('serviceWorker' in navigator) {
-                // Use the window load event to keep the page load performant
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('/service-worker.js');
-                });
-            }
-        </script> -->
+        
     

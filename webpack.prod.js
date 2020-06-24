@@ -15,10 +15,14 @@ const OptimizeCssAssetPlugin=require('optimize-css-assets-webpack-plugin')
 module.exports={
     mode:"production",
     entry:"./src/client/index.js",
+    output:{
+        libraryTarget:'var',
+        library:'Client'
+    },
     devtool:'source-map',
     devServer:{
-        port: 3500,
-        localhost: 3500,
+        port: 8080,
+        localhost: 8080,
     },
     optimization:{
         minimizer:[new TerserPlugin({}), new OptimizeCssAssetPlugin]

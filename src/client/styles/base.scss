@@ -1,3 +1,10 @@
+a:hover,button:hover{
+    background-color: rgb(161, 224, 240) !important; 
+    color: #333;
+    z-index:100;
+  }
+
+
 img {
     width: 200px;
     height: 200px;
@@ -10,8 +17,6 @@ img {
     height: 70px;
     width: 80%;
     margin: auto;
-    
-    
 }
 
 .traveldata{
@@ -129,3 +134,5 @@ padding: 10px;
         padding: 10px;    
         }
   }
+
+  
