@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Trip    Reminder</h1>
+    </div>
+    <main>
+        <p id="errorMessage" style="display: none;"><em>Network Error or Travel Destination Does not Exist.</em></p>
+        <section class="myform">
+            <div class="traveldata travel-city">
+                <Label>City</Label>
+                <input type="text" placeholder="Please Enter travel City" id="travelCity" >
+                
+            </div>
+            <div class="traveldata travel-country">
+                <Label>Country</Label>
+                <select name="" id="countries"></select>
+            </div>
+            <div class="traveldata">
+                <label for="">Travel Date</label>
+                <input type="date" id="travelDate" placeholder="name">
+            </div>
+            
+            <div class="traveldata addtripbutton">
+                <button  id="addTrip" class="traveldata">Add Trip</button>
+            </div>
+                
+        </section>
+        <div class="trip">
+                
+        </div>
+    </main>
+    
+    
+</body>
+</html>
+
+
+        <!-- <script>
+            //last configuration to set up service workers
+            // Check that service workers are supported
+            if ('serviceWorker' in navigator) {
+                // Use the window load event to keep the page load performant
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js');
+                });
+            }
+        </script> -->
+    

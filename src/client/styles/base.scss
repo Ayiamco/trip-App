@@ -1,0 +1,131 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.myform{
+    display:flex;
+    justify-content: center;
+    margin: 5pxpx;
+    height: 70px;
+    width: 80%;
+    margin: auto;
+    
+    
+}
+
+.traveldata{
+    margin:5px;
+    box-shadow: 10px 10px 10px rgb(212, 202, 202);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.travelCity{
+    border: none;
+    height: 70%;
+}
+
+input{
+    height:25%;
+    border: none;
+    outline: none;
+    text-align: center;
+    
+}
+#travelCity ::placeholder{
+    display: flex;
+    justify-content: center;
+}
+
+#travelDate{
+    height: 40%;
+    border: none;
+}
+
+#addTrip{
+    height: 100%;
+    width: 100%;
+    background-color:  rgb(137, 137, 228);
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    color: white;
+}
+
+#errorMessage{
+    color: red;
+    font-size: small;
+    position: relative;
+    top :10px;
+    text-align: center;
+}
+
+#countries{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.trip{
+display: grid;
+grid-template-columns: 1fr 1.5fr;
+grid-gap: 10px;
+margin: 20px 40px;
+padding: 10px;    
+}
+
+
+.trip-sidebar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed  rgb(137, 137, 228);
+}
+.tripDescription{
+    border: 2px dashed  rgb(137, 137, 228); 
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+      background-color: lightblue;
+    }
+    .myform{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        
+    }
+    .travelCity{
+        height:70px;
+        box-shadow: none;
+    }
+    .traveldata{
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        padding:5px;
+        box-shadow: none;
+    }
+
+    .addtripbutton{
+        background-color: lightblue;
+        width: 30%;
+    }
+
+    label{
+        display:none;
+    }
+    .trip{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin: 20px 40px;
+        padding: 10px;    
+        }
+  }
